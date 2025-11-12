@@ -1,29 +1,53 @@
-# TABOKAAAH
+# 🌐 `blog-api` — REST API Server for a Blog Platform
 
+> *A Node.js + Express + MongoDB backend for managing blog content — with authentication, file uploads, and tag management.*
 
-**Getting Started with Create React App**
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
+[![Node.js Version](https://img.shields.io/badge/Node.js-%3E%3D%2018-green)](https://nodejs.org/)  
+[![MongoDB](https://img.shields.io/badge/MongoDB-%3E%3D%204.0-green)](https://www.mongodb.com/)
 
-This project was initialized with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-**Available Scripts**
+## 🔍 Overview
 
-In the project directory, you can run:
+`blog-api` is a **REST API** backend built with **Node.js, Express, and MongoDB**, designed to handle user authentication, content management, and media uploads for a blog platform. The server includes:
 
-**npm start** – Runs the app in development mode at [http://localhost:3000](http://localhost:3000). The page reloads on changes, and lint errors appear in the console.
+- **JWT-based authentication** for secure user sessions  
+- **CRUD operations** for blog posts with validation  
+- **File upload handling** with `multer` for image management  
+- **Tag-based content discovery** for popular tags  
+- **Input validation** using `Joi` for data integrity  
+- **CORS support** for cross-origin requests  
 
-**npm test** – Launches the test runner in interactive watch mode. More details [here](https://facebook.github.io/create-react-app/docs/running-tests).
+This project serves as the backend for a modern blog application, emphasizing **security**, **scalability**, and **maintainability**.
 
-**npm run build** – Builds the app for production, optimizing performance. The output is stored in the **build** folder. More details on [deployment](https://facebook.github.io/create-react-app/docs/deployment).
+---
 
-**npm run eject** – Removes Create React App’s default setup, giving full control over configuration. This is irreversible.
-# authpostersitefront
-The Home component is the main page of the application, displaying a feed of posts, trending tags, and recent comments.
+## 🛠️ Tech Stack
 
-Features:
-	•	Tabs Navigation – Allows users to switch between “New” and “Popular” posts.
-	•	Post List – Displays multiple posts with titles, images, authors, timestamps, views, comments, and tags. Each post is editable.
-	•	Sidebar Widgets:
-	•	TagsBlock – Shows popular tags related to the content.
-	•	CommentsBlock – Displays recent user comments with avatars and text.
+| Technology | Purpose |
+|------------|---------|
+| Node.js (ESM) | JavaScript runtime environment |
+| Express | Web framework for routing and middleware |
+| MongoDB + Mongoose | NoSQL database and ODM |
+| Multer | File upload middleware |
+| CORS | Cross-origin resource sharing |
+| JWT | Authentication and session management |
+| Joi | Input validation and sanitization |
 
-The layout is built using Material UI’s Grid, ensuring a responsive structure with posts occupying most of the space and sidebar widgets complementing the content.
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- **Node.js** >= 18
+- **MongoDB** (local instance or MongoDB Atlas)
+- A `.env` file with environment variables (see [Configuration](#-configuration))
+
+### Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd blog-api
